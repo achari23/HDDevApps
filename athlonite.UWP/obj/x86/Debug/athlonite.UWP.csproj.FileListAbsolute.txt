@@ -312,3 +312,4 @@ C:\Users\aacha\source\repos\athlonite\athlonite.UWP\obj\x86\Debug\MultipleQualif
 C:\Users\aacha\source\repos\athlonite\athlonite.UWP\obj\x86\Debug\ProjectArchitectures.txt
 C:\Users\aacha\source\repos\athlonite\athlonite.UWP\obj\x86\Debug\.winmd_cache\$Microsoft.Graphics.Canvas.winmd_636160859180000000.json
 C:\Users\aacha\source\repos\athlonite\athlonite.UWP\obj\x86\Debug\.winmd_cache\$Microsoft.UI.Xaml.Markup.winmd_636885490160000000.json
+C:\Users\aacha\source\repos\athlonite\athlonite.UWP\bin\x86\Debug\MLToolkit.Forms.SwipeCardView.dll

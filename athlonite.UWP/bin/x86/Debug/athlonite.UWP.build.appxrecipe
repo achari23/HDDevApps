@@ -28,6 +28,9 @@
     <AppxPackagedFile Include="C:\Users\aacha\source\repos\athlonite\athlonite.UWP\bin\x86\Debug\athlonite.UWP.exe">
       <PackagePath>entrypoint\athlonite.UWP.exe</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\aacha\.nuget\packages\mltoolkit.forms.swipecardview\2.2.0\lib\netstandard2.0\MLToolkit.Forms.SwipeCardView.dll">
+      <PackagePath>MLToolkit.Forms.SwipeCardView.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\aacha\.nuget\packages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.1.9\runtimes\win10-x86\nativeassets\uap10.0.15138\clrcompression.dll">
       <PackagePath>clrcompression.dll</PackagePath>
     </AppxPackagedFile>

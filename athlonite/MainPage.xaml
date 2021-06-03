@@ -3,14 +3,50 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:swipeCardView="clr-namespace:MLToolkit.Forms.SwipeCardView;assembly=MLToolkit.Forms.SwipeCardView"
              mc:Ignorable="d"
              x:Class="athlonite.MainPage">
 
     <StackLayout>
-        <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
+        <swipeCardView:SwipeCardView
+            x:Name = "SwipeView1" ItemsSource="{Binding Profiles}" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" 
+            Padding="10" SupportedSwipeDirections="Left,Right,Up">
+            <swipeCardView:SwipeCardView.ItemTemplate>
+                <DataTemplate>
+                    <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                        <Frame CornerRadius="10" Padding="8" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                            <AbsoluteLayout>
+                                <Image Source="{Binding Photo}" Aspect="AspectFill" AbsoluteLayout.LayoutBounds=".5,0.5,1,1" AbsoluteLayout.LayoutFlags="All">
+                                    
+                                </Image>
+                                <Label FontSize="Large" FontAttributes="Bold" TextColor="White"
+                                       AbsoluteLayout.LayoutBounds="0.1,0.95,150,30" AbsoluteLayout.LayoutFlags="PositionProportional">
+                                    <Label.FormattedText>
+                                        <FormattedString>
+                                            <Span Text="{Binding Name}"></Span>
+                                            <Span Text=", "></Span>
+                                            <Span Text="{Binding Age}"></Span>
+                                        </FormattedString>
+                                    </Label.FormattedText>
+                                </Label>
+                            </AbsoluteLayout>
+                        </Frame>
+                    </StackLayout>
+                </DataTemplate>
+            </swipeCardView:SwipeCardView.ItemTemplate>
+        </swipeCardView:SwipeCardView>
+        <StackLayout>
+            <Button x:Name="nopeButton" ImageSource="xbutton.png"
+                    Clicked="OnDislikeClicked" WidthRequest="60" HeightRequest="60" 
+                    CornerRadius="30" BackgroundColor="White" Scale="1"> 
+            </Button>
+        </StackLayout>
+        <StackLayout> 
+            <Button x:Name="yesButton" ImageSource="Run.png"
+                    Clicked="OnLikeClicked" WidthRequest="60" HeightRequest="60" 
+                    CornerRadius="30" BackgroundColor="White" Scale="1">
+            </Button>
+        </StackLayout>
     </StackLayout>
 
 </ContentPage>
